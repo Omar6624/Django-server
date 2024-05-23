@@ -18,5 +18,7 @@ Including another URLconf
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include("api2.urls")),
+    path('api/', include("api2.urls")),
+    path('', include("ReactApp.urls")),
+
 ]
